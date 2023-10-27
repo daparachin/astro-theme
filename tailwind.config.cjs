@@ -124,6 +124,7 @@ module.exports = {
       spin: 'spin 1s linear infinite',
       ping: 'ping 1s cubic-bezier(0, 0, 0.2, 1) infinite',
       pulse: 'pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+      textSlide: 'textSlide 12.5s cubic-bezier(0.83, 0, 0.17, 1) infinite',
       bounce: 'bounce 1s infinite',
     },
     aspectRatio: {
@@ -593,6 +594,26 @@ module.exports = {
           animationTimingFunction: 'cubic-bezier(0,0,0.2,1)',
         },
       },
+      'textSlide': {
+        '0%, 16%': {
+            transform: 'translateY(0%)',
+        },
+        '20%, 36%': {
+            transform: 'translateY(-16.66%)',
+        },
+        '40%, 56%': {
+            transform: 'translateY(-33.33%)',
+        },
+        '60%, 76%': {
+            transform: 'translateY(-50%)',
+        },
+        '80%, 96%': {
+            transform: 'translateY(-66.66%)',
+        },
+        '100%': {
+            transform: 'translateY(-83.33%)',
+        },
+    },                    
     },
     letterSpacing: {
       tighter: '-0.05em',
